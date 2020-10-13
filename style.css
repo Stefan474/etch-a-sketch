@@ -14,8 +14,9 @@ h1{
     width: 800px;
     background-color: bisque;
     margin: auto;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
+    
 }
 
 .bts{
@@ -30,6 +31,7 @@ h1{
 .divs{
     box-sizing:border-box;
     border: 1px solid black;
+    
     
 }
 

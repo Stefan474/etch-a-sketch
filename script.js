@@ -1,9 +1,10 @@
 var container = document.getElementById("container");
-var btnMake = document.getElementById("makeGrid");
 
 function makeGrid(rows, columns){
     let cellH = container.clientHeight/rows;
+    
     let cellW = container.clientWidth/columns;
+    
 
     for(let i = 0; i < rows; i++){
         
@@ -18,4 +19,8 @@ function makeGrid(rows, columns){
     }
 }
 
-makeGrid(21,21);
+document.getElementById("test").addEventListener('click' , () => {
+    var x = document.getElementById("gridInfo").value;
+    container.innerHTML = '';
+    makeGrid(x,x);
+});
