@@ -14,18 +14,28 @@ h1{
     width: 800px;
     background-color: bisque;
     margin: auto;
-    
+    display:flex;
+    flex-wrap: wrap;
 }
 
-.clear{
+.bts{
     display: block;
     margin: auto;
     margin-bottom: 20px;
-    width: 90px;
+    width: 120px;
     height: 30px;
 }
 
+
 .divs{
+    box-sizing:border-box;
     border: 1px solid black;
+    
+}
+
+.gridMakers{
+    display:flex;
+    justify-content: center;
+    margin: auto;
 }
 

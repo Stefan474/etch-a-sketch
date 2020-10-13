@@ -1,14 +1,21 @@
-var s = document.getElementById("container").innerHTML;
+var container = document.getElementById("container");
+var btnMake = document.getElementById("makeGrid");
 
 function makeGrid(rows, columns){
+    let cellH = container.clientHeight/rows;
+    let cellW = container.clientWidth/columns;
 
     for(let i = 0; i < rows; i++){
         
         for(let j = 0; j < columns; j++){
-            
-            s+= `<div class="divs" style="display: inline-block; width:${800/columns}; height:${800/columns}"></div>`
+            var newCell = document.createElement("div");
+            newCell.classList.add('divs');
+            newCell.style.height = `${cellH}px`;
+            newCell.style.width = `${cellW}px`;
+            console.log(newCell.style.height);
+            container.appendChild(newCell);
         }
     }
 }
 
-makeGrid(16,16);
+makeGrid(21,21);
